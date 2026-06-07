@@ -208,6 +208,7 @@ server2 | SUCCESS => {
 Update package definitions and upgrade installed packages on all managed servers:
 
 ```bash
+ansible -a "sudo apt update" servers
 ansible -a "sudo apt upgrade -y" servers
 ```
 
